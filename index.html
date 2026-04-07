@@ -1,419 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/Lokeshico.ico">
-    <title>
-        Lokesh Banskota
-    </title>
-    <!--=================== Google Fonts ====================-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-
-    <!--=================== Remixicons ====================-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=================== SwiperJS CSS ====================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-
-    <!--=================== Main CSS ====================-->
-    <link rel="stylesheet" href="assets/css/main.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lokesh Banskota — Senior Software Developer and Team Lead specializing in .NET, Azure, SQL Server, fintech systems, and cloud-native engineering." />
+  <meta name="keywords" content="Lokesh Banskota, Senior Software Developer, Team Lead, .NET, Azure, SQL Server, Fintech, Nepal" />
+  <meta name="author" content="Lokesh Banskota" />
+  <meta property="og:title" content="Lokesh Banskota | Senior Software Developer" />
+  <meta property="og:description" content="Senior Software Developer and Team Lead building secure, scalable fintech and cloud-native solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/Lokesh.jpeg" />
+  <link rel="icon" href="assets/img/Lokeshico.ico" />
+  <title>Lokesh Banskota | Senior Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
+  <div class="site-bg"></div>
+  <header class="header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#home">Lokesh</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/docs/Lokesh-Banskota-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+    </div>
+  </header>
 
-    <!--=================== Header ====================-->
-    <header id="header" class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="nav__brand">
-                    <i class="ri-code-s-slash-line"></i>Lokesh</Span>
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#hero" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">Qualification</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#service" class="nav__link">Services</a>
-                        </li>
-                       <!-- <li class="nav__item">
-                            <a href="#project" class="nav__link">Projects</a>
-                        </li>-->
-                        <li class="nav__item">
-                            <a href="#contact"  class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__toggle">
-                    <i id="nav-toggle" class="ri-menu-3-line"></i>
-                </div>
-            </nav>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Senior Software Developer · Team Lead · Kathmandu, Nepal</div>
+          <h1>Building secure, scalable software for fintech, cloud, and enterprise platforms.</h1>
+          <p class="hero-text">
+            I design high-performance systems with .NET, Azure, SQL Server, and modern web technologies. My focus is simple: ship reliable software, improve engineering velocity, and solve complex business problems with clean architecture.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Let's Work Together</a>
+            <a class="btn btn-secondary" href="assets/docs/Lokesh-Banskota-CV.pdf" target="_blank" rel="noopener">View Resume</a>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <strong>6+</strong>
+              <span>Years building fintech and cloud systems</span>
+            </article>
+            <article>
+              <strong>Team Lead</strong>
+              <span>Leading delivery, code quality, and architecture</span>
+            </article>
+            <article>
+              <strong>Azure + .NET</strong>
+              <span>Production systems, integrations, CI/CD, and APIs</span>
+            </article>
+          </div>
         </div>
-    </header>
-    <!--=================== main ====================-->
-    <main class="main">
-        <!--=================== Hero ====================-->
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="d-grid hero__wrapper">
-                    <div class="hero__content">
-                        <h1 class="hero__title">Hi, I am Lokesh,<br>Software  Developer.</h1>
-                        <p class="hero__description">I'm a driven and dedicated software developer with a passion for crating efficient and effective solutions.
-                            I strive to deliver high-quality and user-friendly software that meets the needs of clients and end-users. Let's work together to bring your next project to life.
-                        </p>
-                        <div class="hero__info">
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">5+</p>
-                                <h2 class="hero__info-title">Years<br>Experience</h2>
-                            </div>
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">10+</p>
-                                <h2 class="hero__info-title">Projects<br>Completed</h2>
-                            </div>
-                            <!-- <div class="hero__info-wrapper">
-                                <p class="hero__info-number">03+</p>
-                                <h2 class="hero__info-title">Companies<br> Worked</h2>
-                            </div> -->
-                        </div>
-                    </div>
-                    <img src="assets/img/Lokesh.jpeg" alt="Shawn" class="hero__img">
-                </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="profile-card">
+            <div class="profile-ring"></div>
+            <img src="assets/img/Lokesh.jpeg" alt="Lokesh Banskota portrait" class="profile-photo" />
+            <div class="profile-badges">
+              <span>.NET / C#</span>
+              <span>Azure</span>
+              <span>SQL Server</span>
+              <span>Fintech</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!--=================== About ====================-->
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">Who am I</span>
-                </div>
-                <div class="d-grid about__wrapper">
-                    <div class="about__content">
-                        <h3 class="about__title">I'm a Professional and Experienced Software Developer.</h3>
-                        <p class="about__description">I have  a strong focus on creating intuitive and efficient software solutions to meet the needs of clients and end-users.
-                            When I'm not coding, I love to stay up-to-date with the latest technology trends and imporiving my skills.
-                            I'm always eager to take new challenges and work with a team to deliver exceptional results.
-                        </p>
-                       
-                    </div>
-                    <div class="skills">
-                        <h3 class="skills__title">Technologies I've been working with:</h3>
-                        <div class="skills__wrapper">
-                            <div class="skills__content">
-                               <!--  <h4 class="skills__subtitle">Backend</h4>-->
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        C#</li>
-                                        <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                            .NET Core</li>
-                                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                .NET 6(+)</li>
-                                                <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                    ASP.NET</li>
-                                                <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                    ADO.NET</li>
-                                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                        Dapper</li>
-                                                        <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                            Entity Framework</li>
-                                     
-                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Node.js</li> -->
-                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Firebase</li> -->
-                                                             
-           <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        MS SQL</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                               <!-- <h4 class="skills__subtitle">Frontend</h4> --> 
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        HTML</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        CSS</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        JavaScript</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Bootstrap</li>
-                                        <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                            jQuery</li>
-                                            <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                Microsoft Azure</li>
-                                                
-                                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                        Azure Devops</li>
-<li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                                    GIT/SVN</li>
-                                                                        <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Vue.js</li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">About</span>
+          <h2>Experienced developer with leadership, product thinking, and delivery focus.</h2>
+          <p>
+            I currently work as a Senior Software Developer and Team Lead, helping teams build secure and high-performance applications in the fintech and remittance domain. My work spans backend engineering, cloud architecture, integrations, SQL optimization, DevOps, and mentoring developers.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <h3>What I bring</h3>
+            <ul class="check-list">
+              <li>Strong backend engineering with C#, ASP.NET Core, Web API, Dapper, and SQL Server</li>
+              <li>Cloud-native delivery on Microsoft Azure with App Services, Functions, SQL, Key Vault, and Front Door</li>
+              <li>CI/CD pipeline design and automation in Azure DevOps</li>
+              <li>Third-party REST and SOAP integrations for regulated financial systems</li>
+              <li>Team leadership, code reviews, mentoring, and stakeholder collaboration</li>
+            </ul>
+          </article>
+          <article class="glass-card reveal delay-1">
+            <h3>Industry focus</h3>
+            <p>
+              My strongest experience is in fintech and remittance platforms, where reliability, compliance, performance, and secure integrations matter every day. I have also delivered solutions for government and UN-aligned initiatives, including a climate monitoring and reporting system for Nepal.
+            </p>
+            <div class="mini-pills">
+              <span>Fintech & Remittance</span>
+              <span>Enterprise APIs</span>
+              <span>Government Platforms</span>
+              <span>Cloud Solutions</span>
             </div>
-        </section>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <!--=================== Qualification ====================-->
-        <section id="qualification" class="section qualification">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Qualification</h2>
-                    <span class="section__subtitle">Experience & Education</span>
-                </div>
-                <!--============== Professional Experience ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-briefcase-fill"></i>
-                        Professional Experience
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Experience 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Freelance Developer (Backend and API) </h3>
-                            <p class="qualification__description">Before working as a software developer I worked as freelance developer to some of the projects related to IT field. During this time I was working as .NET trainee in a company.
-                            </p>
-                            <span class="qualification__date">2018 - 2019</span>
-                        </div>
-                        <!-- Experience 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Software Developer</h3>
-                            <p class="qualification__description">
-As a software developer at a fintech company specializing in remittance software, I design and build applications that facilitate secure and efficient international money transfers. My responsibilities include creating robust and scalable systems to handle cross-border transactions, ensuring compliance with financial regulations, and integrating various payment gateways.<!-- I work with modern programming languages and technologies to enhance user experiences, reduce transaction times, and improve overall reliability. Additionally, I stay updated with the latest industry trends and security practices to provide innovative solutions for global remittance services.-->
-                            </p>
-                            <span class="qualification__date">2019 - Present</span>
-                        </div>
-                        <!-- Experience 3-->
-                        <!-- <div class="qualification__item">
-                            <h3 class="qualification__title">UI/UX Designer at Pinterest</h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur.
-                                Facilisi vitae bibendum praesent sodales
-                                urna vel molestie neque augue.</p>
-                            <span class="qualification__date">2017 - 2019</span>
-                        </div> -->
-                    </div>
-                </div>
-                <!--============== Education ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-booklet-fill"></i>
-                        Education
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Education 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Bachelor of Science in Information Technology (BScIT)</h3>
-                            <p class="qualification__description">
-Relevant Course Work: Software Engineering, Data Structure and Algorithm, Object 
-Oriented Programming, Database Management System, Algorithm Analysis and Design, 
-Project and Organization Management, Artificial Intelligence
-                            </p>
-                            <span class="qualification__date">2014 - 2017</span>
-                        </div>
-                        <!-- Education 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">M.Sc. Information Technology Management (MSc.ITM)</h3>
-                            <p class="qualification__description">Relevant Course Work: Free and Open Source Programming, Networking System, 
-Strategies Management, Web Intelligence, Organizational Dynamics</p>
-                            <span class="qualification__date">2019 - 2021</span>
-                        </div>
-                        <!-- Education 3-->
-                        <!-- <div class="qualification__item">
-                            <h3 class="qualification__title">Software Engineer</h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur.
-                                Facilisi vitae bibendum praesent sodales
-                                urna vel molestie neque augue.</p>
-                            <span class="qualification__date">2010 - 2014</span>
-                        </div> -->
-                    </div>
-                </div>
-               <!-- <div class="qualification__footer">
-                    <p class="qualification__footer-text">See my full resume</p>
-                    <a href="./assets/Lokesh_Mwangi_Resume.pdf" download class="btn btn--primary">Resume</a>
-                </div>-->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Experience</span>
+          <h2>Career progression built around impact, ownership, and scalable delivery.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">Jan 2025 – Present</div>
+              <h3>Senior Software Developer — Team Lead</h3>
+              <h4>Inficare Pvt. Ltd. · Kathmandu, Nepal</h4>
+              <p>Leading developers, guiding technical decisions, improving delivery quality, and architecting secure cloud solutions on Microsoft Azure for fintech products.</p>
             </div>
-        </section>
-
-        <!--=================== services ====================-->
-        <section id="service" class="section service">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Services</h2>
-                    <span class="section__subtitle">What I do</span>
-                </div>
-                <div class="d-grid service__wrapper">
-                    <!--========= service card 1 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-layout-4-fill"></i>
-                        </div>
-                        <h3 class="service__title">Backend<br>Development</h3>
-                    </div>
-                    <!--========= service card 2 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-code-s-slash-line"></i>
-                        </div>
-                        <h3 class="service__title">Frontend<br> Development</h3>
-                    </div>
-                    <!--========= service card 3 =========-->
-                    <!-- <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-pen-nib-fill"></i>
-                        </div>
-                        <h3 class="service__title">UI/UX<br> Design</h3>
-                    </div> -->
-                </div>
+          </article>
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">Jun 2024 – Jan 2025</div>
+              <h3>Associate Senior Software Developer</h3>
+              <h4>Inficare Pvt. Ltd. · Kathmandu, Nepal</h4>
+              <p>Built and optimized backend systems with ASP.NET Core and SQL Server, improved database performance, and strengthened CI/CD pipelines in Azure DevOps.</p>
             </div>
-        </section>
-
-        <!--=================== Projects ====================-->
-               <!--=================== Testimonials ====================-->
-        <!-- <section id="testimonial" class="section testimonial">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Testimonials</h2>
-                    <span class="section__subtitle">What my clients say</span>
-                </div>
-                <div class="testimonial__wrapper swiper">
-                    <div class="swiper-wrapper">
-                        <!--========= testimonial 1 ============ -->
-                        <!-- <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial1.jpg" alt="Natasha Smith" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">Natasha Smith</h3>
-                                <span class="testimonial__occupation">UI/UX Designer at Dribbble</span>
-                            </div>
-                        </div> -->
-                        <!--========= testimonial 2 ============ -->
-                        <!-- <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial2.jpg" alt="John Clarke" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">John Clarke</h3>
-                                <span class="testimonial__occupation">Web Developer at Facebook</span>
-                            </div>
-                        </div> -->
-                        <!--========= testimonial 3 ============ -->
-                        <!-- <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial3.jpg" alt="Emily Walker" class="testimonial__img">
-                            <div class="testimonial__content">
-                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
-                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
-                                <h3 class="testimonial__name">Emily Walker</h3>
-                                <span class="testimonial__occupation">Backend Developer at Google
-                                </span>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">Nov 2020 – Jun 2024</div>
+              <h3>Software Developer</h3>
+              <h4>Inficare Pvt. Ltd. · Kathmandu, Nepal</h4>
+              <p>Developed core modules, deployed Azure infrastructure, built REST and SOAP APIs, and helped deliver remittance systems with strong reliability and maintainability.</p>
             </div>
-        </section>
-
-        <!--=================== Contact ====================-->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <div class="d-grid contact__wrapper">
-                    <div class="contact__content">
-                        <h2 class="contact__title">Interested in working together? Let's talk</h2>
-                        <p class="contact__description">
-                            Ready to work together on your next software project? I'd love to hear from you! 
-                            Feel free to get in touch using the contact information below.
-                            Whether uou have a specific project in mind or just want to chat about your software development needs , I am here to help.
-                            I will respond to your message as quickly as possible and look forward to connecting with you soon.
-                        </p>
-                    </div>
-                   <!-- <div class="contact__btn">
-                        <a href="#contact" class="btn btn--secondary">Get in touch</a>
-                    </div>-->
-                </div>
+          </article>
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-meta">Jul 2019 – Nov 2020</div>
+              <h3>Junior Software Developer</h3>
+              <h4>Inficare Pvt. Ltd. · Kathmandu, Nepal</h4>
+              <p>Started by building and maintaining remittance applications, implementing front-end features, and supporting database and API development.</p>
             </div>
-        </section>
-    </main>
-    <!--=================== footer ====================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="d-grid footer__wrapper">
-                <div class="footer__content">
-                    <h4 class="footer__title">Follow Me</h4>
-                    <ul class="footer__social-list">
-                       <!-- <li class="footer__social-item">
-                            <a href="https://api.whatsapp.com/send?phone=254795756638&text=Hello%2C%20how%20may%20I%20be%20of%20assistance%3F" target="_blank" class="footer__social-link">
-                                <i class="ri-whatsapp-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="https://www.instagram.com/__future.west__" target="_blank" class="footer__social-link">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                        </li>-->
-                        <li class="footer__social-item">
-                            <a href="https://www.linkedin.com/in/lokesh-banskota-7307a713b/" target="_blank" class="footer__social-link">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <!--<li class="footer__social-item">
-                            <a href="https://github.com/MuneneLokesh" target="_blank" class="footer__social-link">
-                                <i class="ri-github-fill"></i>
-                            </a>
-                        </li>-->
-                    </ul>
-                </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Email Me</h4>
-                    <a href="mailto:banskotau@gmail.com" target="_top" class="footer__social-link"> 
-                        <i class="ri-mail-fill"></i>
-                   </a>
-                </div>
-               <!-- <div class="footer__content">
-                    <h4 class="footer__title">Call Me</h4>
-                    <a href="#" class="footer__contact">+(254)795 756638</a>
-                </div>-->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Selected Expertise</span>
+          <h2>Work that reflects real business value, not just technology buzzwords.</h2>
+        </div>
+        <div class="cards-grid three-up">
+          <article class="feature-card reveal">
+            <div class="feature-number">01</div>
+            <h3>Fintech & Remittance Systems</h3>
+            <p>Built secure systems for international money transfer workflows, transaction processing, partner integrations, compliance-sensitive operations, and performance-focused delivery.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <div class="feature-number">02</div>
+            <h3>Cloud & DevOps Engineering</h3>
+            <p>Designed and managed Azure-based infrastructure including App Services, Functions, SQL, Key Vault, and Front Door while improving release reliability through CI/CD automation.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <div class="feature-number">03</div>
+            <h3>Public Sector Impact</h3>
+            <p>Delivered Nepal’s climate change monitoring, review, and reporting platform aligned with Ministry and UNEP-related goals, showing experience beyond commercial product teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Skills</span>
+          <h2>Core stack and technologies I use to ship production-ready solutions.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="glass-card reveal">
+            <h3>Backend</h3>
+            <div class="skill-pills">
+              <span>C#</span>
+              <span>.NET Core</span>
+              <span>.NET Framework</span>
+              <span>ASP.NET MVC</span>
+              <span>Web API</span>
+              <span>Dapper</span>
+              <span>Entity Framework</span>
+              <span>SOAP APIs</span>
+              <span>REST APIs</span>
             </div>
-        <p class="footer__copyright">
-         &copy; <span id="currentYear"></span> lokeshbanskota.com.np. All Rights Reserved
-        </p>       
- </div>
-    </footer>
+          </article>
+          <article class="glass-card reveal delay-1">
+            <h3>Frontend</h3>
+            <div class="skill-pills">
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>jQuery</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Bootstrap</span>
+            </div>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Database & Performance</h3>
+            <div class="skill-pills">
+              <span>SQL Server</span>
+              <span>T-SQL</span>
+              <span>Query Optimization</span>
+              <span>Indexing</span>
+              <span>Database Design</span>
+            </div>
+          </article>
+          <article class="glass-card reveal delay-1">
+            <h3>Cloud & Delivery</h3>
+            <div class="skill-pills">
+              <span>Microsoft Azure</span>
+              <span>Azure DevOps</span>
+              <span>App Services</span>
+              <span>Azure Functions</span>
+              <span>Key Vault</span>
+              <span>Front Door</span>
+              <span>Docker</span>
+              <span>AWS Fundamentals</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!--=================== SwiperJS  ====================-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Education & Recognition</span>
+          <h2>Academic foundation backed by practical delivery and continuous growth.</h2>
+        </div>
+        <div class="cards-grid two-up">
+          <article class="glass-card reveal">
+            <h3>Education</h3>
+            <div class="info-stack">
+              <div>
+                <strong>M.Sc. in Information Technology Management</strong>
+                <span>LBEF Campus · Asia Pacific University · 2019 – 2021</span>
+              </div>
+              <div>
+                <strong>B.Sc. in Information Technology</strong>
+                <span>LBEF Campus · Sikkim Manipal University · 2014 – 2017</span>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card reveal delay-1">
+            <h3>Awards & Training</h3>
+            <ul class="check-list compact">
+              <li>Stand Out Performer 2025 — Inficare Pvt. Ltd.</li>
+              <li>Excellence Beyond Par — RemitX 2022</li>
+              <li>ASP.NET MVC Training (6 Months) — Leapfrog Academy</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!--=================== ScrollReveal ==================-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <span class="section-tag">Contact</span>
+            <h2>Open to meaningful software work, consulting, and collaboration.</h2>
+            <p>If you need a developer who can move between architecture, coding, SQL tuning, cloud deployment, and team leadership, let's connect.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:banskotau@gmail.com">banskotau@gmail.com</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/lokesh-banskota-7307a713b/" target="_blank" rel="noopener">LinkedIn Profile</a>
+            <a class="btn btn-ghost" href="tel:+9779815927113">+977 9815927113</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!--=================== Main JS ====================-->
-    <script src="assets/js/main.js"></script>
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <a class="brand brand-footer" href="#home">Lokesh<span>.</span></a>
+        <p>Senior Software Developer · Team Lead · Fintech & Cloud Engineering</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:banskotau@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/lokesh-banskota-7307a713b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/docs/Lokesh-Banskota-CV.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </footer>
 
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
-<script>
-  // Get the current year
-  const year = new Date().getFullYear();
-  // Set the year dynamically
-  document.getElementById('currentYear').textContent = year;
-</script>
-

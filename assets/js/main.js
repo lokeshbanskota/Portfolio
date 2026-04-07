@@ -1,97 +1,43 @@
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navItem = document.querySelectorAll(".nav__item"),
-  header = document.getElementById("header");
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+const navLinks = [...document.querySelectorAll('.nav-menu a[href^="#"]')];
 
-// open and close menu
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav__menu--open");
-  changeIcon();
-});
-
-// close the menu when the user clicks the nav links
-navItem.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (navMenu.classList.contains("nav__menu--open")) {
-      navMenu.classList.remove("nav__menu--open");
-    }
-    changeIcon();
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
   });
-});
-
-// Change nav toggle icon
-function changeIcon() {
-  if (navMenu.classList.contains("nav__menu--open")) {
-    navToggle.classList.replace("ri-menu-3-line", "ri-close-line");
-  } else {
-    navToggle.classList.replace("ri-close-line", "ri-menu-3-line");
-  }
 }
 
-// Downloading Resume
-// document.getElementsByClassName("btn btn--primary").addEventListener("click", function() {
-//   window.location.href = "../../assets/Calvin Mwangi.pdf"
-// })
-
-
-// Testimonial Slide
-
-const testimonialSlide = new Swiper(".testimonial__wrapper", {
-  loop: true,
-  spaceBetween: 30,
-  centeredSlides: true,
-  effect: "coverflow",
-  grabCursor: true,
-  slidesPerView: 1,
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  breakpoints: {
-    520: {
-      slidesPerView: "auto",
-    },
-  },
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => navMenu.classList.remove('open'));
 });
 
-// header scroll animation
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 40) {
-    header.classList.add("header--scroll");
-  } else {
-    header.classList.remove("header--scroll");
-  }
-});
-
-// ScrollReveal animations
-const sr = ScrollReveal({
-  duration: 2000,
-  distance: "100px",
-  delay: 400,
-  reset: false,
-});
-
-sr.reveal(".hero__content, .about__content");
-sr.reveal(".hero__img", { origin: "top" });
-
-sr.reveal(
-  ".hero__info-wrapper, .skills__title, .skills__content, .qualification__name, .qualification__item, .service__card, .project__content, .testimonial__wrapper, .footer__content",
-  {
-    delay: 500,
-    interval: 100,
-  }
+const revealItems = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
 );
 
-sr.reveal(".qualification__footer-text, .contact__content", {
-  origin: "left",
-});
+revealItems.forEach((item) => observer.observe(item));
 
-sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });
+const sections = [...document.querySelectorAll('main section[id]')];
+const setActiveLink = () => {
+  const current = sections.find((section) => {
+    const rect = section.getBoundingClientRect();
+    return rect.top <= 120 && rect.bottom >= 120;
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.toggle('active', current && link.getAttribute('href') === `#${current.id}`);
+  });
+};
+
+window.addEventListener('scroll', setActiveLink, { passive: true });
+window.addEventListener('load', setActiveLink);
